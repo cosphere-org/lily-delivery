@@ -1,0 +1,15 @@
+
+# -- testing framework
+pytest==3.6.1
+
+# -- allows specifying python project path to be discovered
+pytest-pythonpath==0.7.1
+
+# -- provides injectable mocker fixture
+pytest-mock==0.10.1
+
+# -- provides coverage measurements
+pytest-cov==2.5.1
+
+# -- fake data
+fake-factory==0.5.6

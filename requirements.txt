@@ -1,0 +1,4 @@
+
+# -- cli tools framework
+# DOCS: https://click.palletsprojects.com/en/7.x/
+Click==7.0
