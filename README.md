@@ -11,7 +11,6 @@ Foundations:
 ### Deploying Angular 2+ CLI project to S3
 
 ```bash
-
 lily_delivery deploy-angular-cli-to-s3 \
     --project my-angular-2-project \
     --environment integration

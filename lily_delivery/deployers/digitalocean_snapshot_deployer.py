@@ -1,5 +1,0 @@
-
-
-class DigitaloceanSnapshotDeployer:
-
-    pass

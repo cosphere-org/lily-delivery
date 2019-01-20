@@ -65,7 +65,7 @@ class Cloudfront:
                         {
                             'ErrorCode': 404,
                             'ResponsePagePath': f'/{index_html_key}',
-                            'ResponseCode': 200,
+                            'ResponseCode': '200',
                             'ErrorCachingMinTTL': 300
                         },
                     ]

@@ -111,7 +111,7 @@ class CloudfrontTestCase(TestCase):
                             {
                                 'ErrorCode': 404,
                                 'ResponsePagePath': '/index-1.5.6.html',
-                                'ResponseCode': 200,
+                                'ResponseCode': '200',
                                 'ErrorCachingMinTTL': 300,
                             },
                         ],
