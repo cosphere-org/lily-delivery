@@ -2,3 +2,10 @@
 # -- cli tools framework
 # DOCS: https://click.palletsprojects.com/en/7.x/
 Click==7.0
+
+# -- client library for interacting with AWS services: S3 and cloudfront
+# DOCS: https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+boto3==1.9.80
+
+# -- parsing Yaml configuration
+pyaml==18.11.0

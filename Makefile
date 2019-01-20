@@ -19,10 +19,11 @@ install:
 # TESTS
 #
 test:  ## run selected tests
-	py.test --cov=./lily_env --cov-config .coveragerc -r w -s -vv $(tests)
+	py.test --cov=./lily_delivery --cov-config .coveragerc -r w -s -vv $(tests)
 
 test_all:  ## run all available tests
-	py.test --cov=./lily_env --cov-config .coveragerc -r w -s -vv tests
+	py.test --cov=./lily_delivery --cov-config .coveragerc -r w -s -vv tests
 
 coverage:  # render html coverage report
+	make test_all && \
 	coverage html -d coverage_html && google-chrome coverage_html/index.html

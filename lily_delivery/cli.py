@@ -1,7 +1,10 @@
 
+import os
+
+import yaml
 import click
 
-from deployers import S3WebsiteDeployer
+from .deployers import AngularCLIS3WebsiteDeployer
 
 
 @click.group()
@@ -11,11 +14,18 @@ def cli():
 
 
 @click.command()
+@click.option('--project')
 @click.option(
     '--environment', default='integration')
-def deploy(environment):
+def deploy_angular_cli_to_s3(project, environment):
 
-    S3WebsiteDeployer().deploy()
+    with open(os.path.join(os.getcwd(), '.lily_delivery.yaml'), 'r') as f:
+        conf = yaml.load(f.read())
+
+    AngularCLIS3WebsiteDeployer(
+        environment=environment,
+        project=project,
+        conf=conf).deploy()
 
 
-cli.add_command(deploy)
+cli.add_command(deploy_angular_cli_to_s3)
